@@ -319,7 +319,7 @@ class Converter(datastore_pbs._EntityConverter):
             v1_value = v1_property.value
 
             if v1_value.list_value:
-                for v1_sub_value in v1_value.list_valie:
+                for v1_sub_value in v1_value.list_value:
                     self.__add_v3_property(property_name, True, v1_sub_value, v3_entity)
             else:
                 self.__add_v3_property(property_name, False, v1_value, v3_entity)
